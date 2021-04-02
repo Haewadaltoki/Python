@@ -1,0 +1,26 @@
+import turtle
+
+turtle.shape('turtle')
+내각_크기 = 59
+외각_크기 = 180 - 내각_크기
+선분_개수 = 200
+선분_길이 = 200
+
+turtle.bgcolor('black')
+turtle.speed(0)
+
+for i in range(선분_개수):
+    a = i%3
+    if( a == 1) :
+        turtle.pencolor('red')
+    elif(a == 2) :
+        turtle.pencolor('blue')
+    else : 
+        turtle.pencolor('yellow')
+    
+    선분_길이 = i * 3
+    turtle.forward(선분_길이)
+    turtle.left(외각_크기)
+
+turtle.hideturtle()
+turtle.done()
