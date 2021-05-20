@@ -1,0 +1,25 @@
+coffee = 0
+
+def coffee_machine(button):
+    print()
+    print("#1.(auto) Preparing the hot water")
+    print("#2.(auto) Preparing the cup")
+
+    if button == 1 :
+        print("#3.(auto) Nomarl mix coffee.")
+    elif button == 2 :
+        print("#3.(auto) Sugar mix coffee.")
+    elif button == 3 :
+        print("#3.(auto) Black coffee.")
+    else :
+        print(" ¯＼_(ツ)_/¯ ")
+
+
+    print("#4.(auto) put on water.");
+    print("#5.(auto) shake water.");
+    print()
+
+
+coffee = int(input("do you wanna some coffe(1:normal,2:sugar,3:black)"))
+coffee_machine(coffee)
+print("here you're.")
